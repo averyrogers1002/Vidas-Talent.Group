@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Services — Vidas Talent Group</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="logo">Vidas Talent Group</div>
+
+  <button class="nav-toggle" id="navToggle">☰</button>
+
+  <nav class="nav" id="navMenu">
+    <a href="index.html">Home</a>
+    <a href="services.html" class="active-page">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+</header>
+
+<section class="section services">
+  <h2>Services</h2>
+
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>Research</h3>
+      <p>We complete extensive research and vetting before connecting potential executives with your organization. Executives must share your organization’s passion and believe in its mission in order to effectively lead.  As a part of this process, we take a deep dive into your candidates’ core values, not just their accolades. We will develop a deep understanding of your organization’s ethos and business model to ascertain the optimal fit.</p>
+    </div>
+
+    <div class="service-card">
+      <h3>Strategic Partner</h3>
+      <p>As a strategic partner, we have an unwavering commitment and desire to help our clients achieve success.We will be your partner throughout the recruiting process, able to create better opportunities for success--success in identifying, vetting, and ultimately landing the very best executive talent, in turn creating better opportunities for organizational success. </p>
+    </div>
+
+    <div class="service-card">
+      <h3>Business Functions</h3>
+      <p>Our executive recruitment services span across all business functions to include: Commercial, clinical development (all therapeutic areas), safety, medical affairs, HR, finance, quality & compliance, and regulatory industries, just to name a few.   We have the track record, experience, and skills to recruit top-tier talent that’s vital to the success of businesses.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+    <div class="logo-img">
+        <img src="images/vidas_talent_group_cover.jpeg" alt="logo">
+    </div>
+</section>
+
+<footer class="footer">
+  © <span id="year"></span> Vidas Talent Group
+</footer>
+
+<script>
+  const toggle = document.getElementById("navToggle");
+  const menu = document.getElementById("navMenu");
+  toggle.addEventListener("click", () => menu.classList.toggle("active"));
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
